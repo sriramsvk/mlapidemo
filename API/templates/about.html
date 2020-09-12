@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+   <article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+        <a class="mr-2  " > About this Site</a>
+        </div>
+        <p class="article-content">Hey! This is Sriram. Welcome to my demo Site.
+            Objective is to showcase 3 business use cases, I developed and deployed ML models.
+        </p>
+        <p class="article-metadata">Image Classification</p>
+        <p class="article-content">This is a typical use case in Healthcare Paper Claim processing workflow. First step in the process is to classify the incoming images. This critical step helps with completing the KFI, in order for the claim to be properly filed for payment. Image classification API building using CNN model helps to identify Structured and Unstructed Claims, thus trying to reduce / eliminate manual classification effort.</p>
+        <p class="article-content">API can be accessed using /Image for prediction </p>
+
+        <p class="article-metadata">Enrollment Status Review </p>
+        <p class="article-content"> This use case involves assisting Eligibility Underwriters make determination either to approve or reject enrollment application received during Special Enrollment Period. Prediction are made using Member and Dependent Demographics through Logistic Regression Model.</p>
+        <p class="article-contet"> API can be accessed using /Enrollmentreview for prediction </p>
+
+        <p class="article-metadata">Utilization Review </p>
+        <p class="article-content">High Dollar Claims go through utilization approval prior to payment. This involves capturing additional Meta data from Itemized Bill. API built using LSTM  helps identify claims that require additional keying using Medical report finding, thus enabling only qualified claims to be routed for additional review.</p>
+        <p class="article-contet"> API can be accessed using /Utilizationreview for prediction </p>
+
+    </div>
+
+{% endblock content %}
