@@ -21,7 +21,6 @@ oauthlib==3.1.0
 opencv-python==4.4.0.42
 opt-einsum==3.1.0
 pandas==1.1.1
-pywin32==228
 pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==19.0.1
