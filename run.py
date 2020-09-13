@@ -14,7 +14,7 @@ for buliting Flask REST API'''
 
 if __name__ == '__main__':
     ## setting directory to current script directory ##
-    abspath = os.path.abspath(sys.argv[0])  # script path
-    dname = os.path.dirname(abspath)  # get directory name
-    os.chdir(dname)  # change path to script directory
+    #abspath = os.path.abspath(sys.argv[0])  # script path
+    #dname = os.path.dirname(abspath)  # get directory name
+    os.chdir('/APP')  # change path to script directory
     app.run(debug=True)
