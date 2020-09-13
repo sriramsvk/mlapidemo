@@ -6,12 +6,8 @@ from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 import re
 import numpy as np
-from nltk.corpus import stopwords
-STOPWORDS = set(stopwords.words('english'))
-
 REPLACE_BY_SPACE_RE = re.compile('[/(){}\[\]\|@,;:]')  # re.complie is method combine list of value you search in a string
 BAD_SYMBOLS_RE = re.compile('[^0-9a-z #+_]')
-STOPWORDS = set(stopwords.words('english')) # stopwords are most commonly used words in english like A, is , was that do not add any value to NLP
 MAX_SEQUENCE_LENGTH = 250
 MAX_NB_WORDS = 50000
 def clean_text(text):
