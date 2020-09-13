@@ -45,7 +45,7 @@ class ImagePredictClass(Resource):
             encoded_string = img64_encode.decode("utf-8")
             
             '''
-            decode_img = open('./API/predict_decode.jpg', 'wb')  # write file
+            decode_img = open('./API/static/predict_decode.jpg', 'wb')  # write file
             decode_img.write(img64_decode)
             decode_img.close()
             ##### Prediction ####
@@ -53,7 +53,8 @@ class ImagePredictClass(Resource):
             #import keras.backend.tensorflow_backend as tb
             #tb._SYMBOLIC_SCOPE.value=True
             imgmodel = load_model('./API/imageclasscnn')  # loading saved model
-            imgpath = "predict_decode.jpg"
+            imgpath = "./API/static/predict_decode.jpg"
+            print(imgpath)
             input_img = cv2.imread(imgpath, 0)
             resize_img = cv2.resize(input_img, (100, 100))
             reshape_img = resize_img.reshape(100, 100, 1)
