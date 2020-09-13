@@ -50,7 +50,7 @@ class UTreviewpredict(Resource):
 
             ##### Prediction ####
             from keras.models import load_model
-            lstm_model = load_model('utreview-lstmmodel.h5')
+            lstm_model = load_model('\\API\\utreview-lstmmodel.h5')
             y_pred = lstm_model.predict_proba(x_pred)
             y_predclass = lstm_model.predict_classes(x_pred)
             labels = ['Overturned Decision of Health Plan', 'Upheld Decision of Health Plan']
