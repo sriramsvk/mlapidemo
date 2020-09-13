@@ -82,7 +82,7 @@ class enrollstatus(Resource):
             print(x_pred)
             ##### Prediction ####
             import pickle
-            modelname = './enroll_reviews.sav'
+            modelname = './API/enroll_reviews.sav'
             reviewlogmodel = pickle.load(open(modelname, 'rb'))
             y_pred = reviewlogmodel.predict(x_pred)
             y_pred_prob = reviewlogmodel.predict_proba(x_pred)
