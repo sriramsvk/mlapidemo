@@ -45,7 +45,7 @@ class ImagePredictClass(Resource):
             encoded_string = img64_encode.decode("utf-8")
             
             '''
-            decode_img = open('./APP/predict_decode.jpg', 'wb')  # write file
+            decode_img = open('./APP/predict_decode.jpg', 'xb')  # write file
             decode_img.write(img64_decode)
             decode_img.close()
             ##### Prediction ####
